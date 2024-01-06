@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    position: relative;
+    width: 100%;
+    background: url("Img/backg.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the entire header */
+    color: white;
+    height: 80vh;
+}
+
+header .info {
+    position: absolute; /* Position relative to the header */
+    bottom: 4rem; /* Align to the bottom of the header */
+    left: 50%; /* Align horizontally to the center */
+    transform: translateX(-50%); /* Center horizontally using transform */
+    text-align: center;
+}
+
+.info p{
+    padding: .5rem 0;
+}
+@media (min-width: 968px) {
+  header .info{
+    bottom: 6rem;
+   }
+    .info h1{
+    font-size: 4rem;
+   }
+   
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex:
+    justify-content:center;
+    background: white;
+    color: #8C111B ;
+    padding: 1rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+.style{
+    color: #8C111B;
+}
+.Biography-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: black;
+    padding: 1rem;
+}
+.Biography{
+    max-width: 600px
+   
+}
+.Biography-image{
+    max-width: 500px
+}
+.Biography h2{
+    margin: 1rem 0;
+}
+.Biography-container P{ 
+    line-height: 1.5;
+}
+@media (min-width: 968px) {
+    .Biography-container{
+        flex-direction: row;
+    }
+     
+}
+  a{
+    text-decoration: none;
+    color: #0044CC;
+    cursor: pointer;
+  }
+  .read-more{
+    padding: .5rem 2rem;
+    border: 0;
+    background: black;
+    color: white;
+    font-size: Bold;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  .read-more:hover{
+    background: #8C111B;
+  }
+  .quotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: black;
+    padding: 1rem;
+}
+.quotes-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.quotes-card{
+    padding: .5rem;
+    
+}
+@media (min-width: 968px) {
+    .quotes-container{
+        max-width: 1350px;
+        flex-direction: row;
+    }
+    .quotes-card{
+        width: 360px;
+    }
+     
+}
+.quotes-link{
+    margin: .5rem 0;
+}
